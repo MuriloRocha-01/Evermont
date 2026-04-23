@@ -6,22 +6,22 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen text-white">
       <div
-        className={`min-h-[100vh] min-w-full bg-[url('/evermont/assets/background_mobile.jpg')] md:bg-[url('/evermont/assets/background_homePage.jpg')] bg-cover bg-bottom bg-no-repeat flex flex-col justify-center md:px-[14%] px-[5%] pb-[6%] gap-8`}
+        className={`min-h-[100vh] min-w-full bg-[url('/evermont/assets/background_mobile.jpg')] md:bg-[url('/evermont/assets/background_homePage.jpg')] bg-cover bg-bottom bg-no-repeat flex flex-col justify-center md:px-[14%] px-[5%] pb-[10%] gap-8`}
       >
-        <h1 className="text-start lg:text-4xl text-xl font-bold text-white tracking-wide leading-6 md:leading-10">
-          Transformamos dados em <br />
-          <span className="text-[#7CB6D8] mr-3">clareza estratégica</span>
-          para decisões <br /> que movem empresas.
+        <h1 className="max-w-none md:max-w-[600px] text-start lg:text-4xl text-xl font-bold text-white tracking-wide leading-6 md:leading-10">
+          Transformamos dados em 
+          <span className="text-[#7CB6D8] mx-2 md:mx-3">clareza estratégica</span>
+          para decisões que movem empresas.
         </h1>
 
-        <p className="text-start text-base lg:text-lg tracking-wide">
-          Soluções para empresas que buscam orientação <br />
-          baseada em dados, eficiência operacional <br />e crescimento
+        <p className="text-start md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed max-w-none md:max-w-[470px]">
+          Soluções para empresas que buscam orientação 
+          baseada em dados, eficiência operacional e crescimento
           sustentável.
         </p>
 
         <Link href="/contato">
-          <button className="cursor-pointer shadow-lg font-sm rounded-full py-3 px-6 md:py-2 md:px-14 bg-gradient-to-r from-[#5089B0] to-[#2F5A83]">
+          <button className="cursor-pointer shadow-lg font-sm rounded-full py-3 px-6 md:py-2 md:px-14 bg-gradient-to-r from-[#5089B0] to-[#2F5A83] hover:scale-103 transition duration-300 ease-in-out">
             Fale com um Consultor
           </button>
         </Link>
@@ -29,15 +29,15 @@ export default function Home() {
       
 
       <div
-        className="bg-[url('/evermont/assets/background_mobile02.jpg')] md:bg-[url('/evermont/assets/background_homePage02.jpg')] min-h-[50vh] md:min-h-[74vh] min-w-full bg-cover bg-no-repeat flex flex-col justify-center md:px-[15%] px-[5%] gap-6 pb-0 md:pb-42"
+        className="bg-[url('/evermont/assets/background_mobile02.jpg')] md:bg-[url('/evermont/assets/background_homePage02.jpg')] min-h-[50vh] md:min-h-[74vh] min-w-full bg-cover bg-no-repeat flex flex-col justify-center md:px-[14%] px-[5%] gap-6 pb-0 md:pb-42"
       >
         <h1 className="text-start md:text-4xl text-xl font-bold text-white tracking-wide leading-6 md:leading-10">
           Estratégia alinhada <br />
           <span className="text-[#7CB6D8] mr-3">a Resultados Reais</span>
         </h1>
 
-        <p className="text-start text-base md:text-lg tracking-wide">
-          A Evermont Consultoria transforma desafios<br/> empresariais complexos em decisões<br/> estruturadas e orientadas por informação.
+        <p className="text-start text-gray-300 leading-relaxed md:text-[1.2rem] text-[1.1rem] max-w-full md:max-w-[450px]">
+          A Evermont Consultoria transforma desafios empresariais complexos em decisões estruturadas e orientadas por informação.
         </p>
       </div>
 
