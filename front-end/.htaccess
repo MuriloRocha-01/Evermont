@@ -1,0 +1,27 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /evermont/
+
+    # Garante que URLs sem barra sejam redirecionadas para a versão com barra (importante para pastas)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+</IfModule>
+
+<IfModule mod_headers.c>
+    # Permite acesso externo (CORS)
+    Header set Access-Control-Allow-Origin "*"
+
+    # 1. Desativa o cache de arquivos para forçar download novo a cada visita
+    # Impede o armazenamento (no-store) e obriga a revalidação (must-revalidate)
+    Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    Header set Pragma "no-cache"
+    Header set Expires "Thu, 01 Jan 1970 00:00:00 GMT"
+</IfModule>
+
+# 2. Especifica que arquivos estáticos também não devem ser cacheados
+<FilesMatch "\.(html|htm|js|css|png|jpg|jpeg|gif|ico|woff2)$">
+    <IfModule mod_headers.c>
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+    </IfModule>
+</FilesMatch>
