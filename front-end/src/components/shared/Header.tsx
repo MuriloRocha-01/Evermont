@@ -12,8 +12,6 @@ function Header() {
 
   const pathname = usePathname();
 
-  const estaNaPaginaDeAtuacao = pathname === "/areaDeAtuacao" || isAtuacao;
-
   const isActive = (path: string) => {
     if (path === '/') return pathname === '/';
     return pathname.startsWith(path);
@@ -55,9 +53,7 @@ function Header() {
     <header>
       <nav
         className={`shadow-xl fixed top-0 w-full flex items-center justify-between px-10 transition-all duration-500 ease-in-out z-[100] h-[95px] max-h-[200px] ${
-          estaNaPaginaDeAtuacao
-            ? "bg-[#132543] shadow-lg"
-            : scrolled || isOpen
+             scrolled || isOpen
               ? "bg-[#0a192f]/50 backdrop-blur-md shadow-xl border-b border-white/10"
               : "bg-transparent border-none"
         }`}

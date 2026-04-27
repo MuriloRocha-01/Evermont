@@ -3,14 +3,13 @@ import { CARD_MOCK, METODOLOGIA_MOCK } from '../../shared/cards_mock/areasDeAtua
 function AreaDeAtuacao() {
   return (
     <div
-      id="area-atuacao"
       className="bg-[url('/evermont/assets/bg-sobre-contato.jpg')] flex items-center justify-center min-h-screen md:min-h-[150vh] w-full flex-col bg-cover bg-center bg-no-repeat text-white px-8 py-38 md:px-102"
     >
-      <div className=" text-[#393756] flex flex-col gap-6">
+      <div className=" text-white flex flex-col gap-6">
         <h1 className="text-3xl font-bold tracking-wide">
           Áreas de Atuação
         </h1>
-        <p className="text-[1.1rem] leading-relaxed text-[#393756]/80">
+        <p className="text-[1.1rem] leading-relaxed text-gray-300">
           Soluções personalizadas para cada desafio empresarial.
         </p>
 
@@ -36,7 +35,7 @@ function AreaDeAtuacao() {
         </div>
       </div>
 
-      <div className=" mt-32 text-[#393756] flex flex-col gap-6">
+      <div className=" mt-32 flex flex-col gap-6">
         <h1 className="text-4xl font-semibold mb-4 tracking-wide text-start">
           Como Conduzimos a Transformação
         </h1>

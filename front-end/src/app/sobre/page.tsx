@@ -22,9 +22,9 @@ export default function Sobre() {
             className="w-full h-auto rounded-xl shadow-xl md:block hidden"
             src="/evermont/assets/card_sobre_page.jpg"
             alt="Sobre a Evermont"
-            width={800} // Ajuste conforme o tamanho real da imagem
-            height={450} // Ajuste conforme o tamanho real da imagem
-            priority // Adicione se esta imagem aparecer no topo da página (acima da dobra) 
+            width={800} 
+            height={450} 
+            priority 
           />
         </div>
 
