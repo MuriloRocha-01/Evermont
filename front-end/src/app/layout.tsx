@@ -12,7 +12,13 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "Evermont Consultoria", // Título atualizado
-  description: "Transformando dados em clareza estratégica.",
+  description: "A Evermont Group oferece soluções em eficiência operacional, consultoria de gestão e planejamento para expansão de empresas.",
+  keywords: ['Evermont', 'Consultoria', 'Gestão Estratégica', 'Eficiência Operacional'],
+  icons: {
+    icon: "/evermont/logo_evermont.ico", 
+    shortcut: "/evermont/logo_evermont.ico",
+    apple: "/evermont/logo_evermont.ico",
+  },
 };
 
 export default function RootLayout({

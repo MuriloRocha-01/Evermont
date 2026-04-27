@@ -2,11 +2,12 @@ import {
   EXPERIENCIA_SOBRE,
   VALORES_SOBRE,
 } from "../../shared/cards_mock/sobre_mock/card_mock";
+import Image from 'next/image'
 
 export default function Sobre() {
   return (
-      <div className="text-[#393756] bg-[#eae9ef] flex items-center justify-center min-h-screen w-full flex-col bg-cover">
-        <div className="px-8 md:px-102 text-start text-white items-center justify-center py-42 gap-6 bg-[url('/evermont/assets/bg-sobre-contato.jpg')] min-h-[100vh] min-w-full bg-cover bg-bottom bg-no-repeat flex flex-col gap-8">
+      <div className="text-[#393756] bg-[#eae9ef] flex items-center justify-center min-h-screen w-full flex-col bg-cover ">
+        <div className="px-8 md:px-102 text-start py-38 text-white items-center justify-center bg-[url('/evermont/assets/bg-sobre-contato.jpg')] min-h-[100vh] min-w-full bg-cover bg-bottom bg-no-repeat flex flex-col gap-6">
           <h1 className="w-full text-3xl font-bold">Sobre Nós</h1>
           <p className="w-full md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed">
             A Evermont Consultoria fornece soluções assertivas e decisões
@@ -17,9 +18,13 @@ export default function Sobre() {
             transparência e foco em dados para transformar desafios em
             conquistas reais para sua empresa.
           </p>
-          <img
-            className="w-full rounded-xl shadow-xl md:block hidden"
+          <Image
+            className="w-full h-auto rounded-xl shadow-xl md:block hidden"
             src="/evermont/assets/card_sobre_page.jpg"
+            alt="Sobre a Evermont"
+            width={800} // Ajuste conforme o tamanho real da imagem
+            height={450} // Ajuste conforme o tamanho real da imagem
+            priority // Adicione se esta imagem aparecer no topo da página (acima da dobra) 
           />
         </div>
 

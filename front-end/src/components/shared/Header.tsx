@@ -63,14 +63,14 @@ function Header() {
         }`}
       >
         <Link  href="/" onClick={() => setIsOpen(false)}>
-          <Image
-            priority
-            src="/evermont/assets/logo_evermont.png"
-            alt="Evermont Consultoria Logo"
-            width={168}
-            height={50}
-            className="h-auto object-contain"
-          />
+           <Image
+           src="/evermont/assets/logo_evermont.png"
+           alt="Evermont Group Logo"
+           width={168} // Valor de referência para o maior tamanho (w-42 = 168px)
+           height={50}  // Valor de referência para a proporção
+           className="w-32 md:w-42 h-auto object-contain"
+           priority
+            />
         </Link>
         <ul className="hidden lg:flex justify-center items-center gap-10 text-white font-medium text-center">
           <li>

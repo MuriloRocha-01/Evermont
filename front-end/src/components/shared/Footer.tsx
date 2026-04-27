@@ -1,14 +1,18 @@
 import { IconMail, IconMapPin, IconPhone } from "@tabler/icons-react";
 import Link from "next/link";
-
+import Image from 'next/image'
 function Footer() {
   return (
     <div className="bg-[#050c1a]/90 text-[#919092] text-center md:text-start p-4 flex items-center flex-col justify-around gap-3">
       <section className="flex flex-col gap-3 items-center">
           <Link href="/">
-            <img
+            <Image
               src="/evermont/assets/logo_evermont.png"
+              alt="Evermont Group Logo"
+              width={168} // Valor de referência para o maior tamanho (w-42 = 168px)
+              height={50}  // Valor de referência para a proporção
               className="w-32 md:w-42 h-auto object-contain"
+              priority
             />
           </Link>
       </section>

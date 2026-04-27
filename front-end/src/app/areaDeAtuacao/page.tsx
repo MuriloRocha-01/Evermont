@@ -4,9 +4,9 @@ function AreaDeAtuacao() {
   return (
     <div
       id="area-atuacao"
-      className="bg-[#eae9ef] flex items-center justify-center min-h-screen md:min-h-[150vh] w-full flex-col bg-cover bg-center bg-no-repeat text-white py-12 md:py-30 px-8 md:px-102"
+      className="bg-[url('/evermont/assets/bg-sobre-contato.jpg')] flex items-center justify-center min-h-screen md:min-h-[150vh] w-full flex-col bg-cover bg-center bg-no-repeat text-white px-8 py-38 md:px-102"
     >
-      <div className="pt-30 md:pt-10 text-[#393756] flex flex-col gap-6">
+      <div className=" text-[#393756] flex flex-col gap-6">
         <h1 className="text-3xl font-bold tracking-wide">
           Áreas de Atuação
         </h1>
