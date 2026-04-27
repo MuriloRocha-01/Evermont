@@ -19,7 +19,7 @@ export default function Sobre() {
             conquistas reais para sua empresa.
           </p>
           <Image
-            className="w-full h-auto rounded-xl shadow-xl md:block hidden"
+            className="w-full h-auto rounded-xl md:block hidden object-cover md:block hidden"
             src="/evermont/assets/card_sobre_page.jpg"
             alt="Sobre a Evermont"
             width={800} 

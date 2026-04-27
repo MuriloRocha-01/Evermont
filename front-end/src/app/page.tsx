@@ -18,7 +18,7 @@ export default function Home() {
             para decisões que movem empresas.
           </h1>
 
-          <p className="text-start md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed max-w-none md:max-w-[470px]">
+          <p className="text-start md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed max-w-none md:max-w-[500px]">
             Soluções para empresas que buscam orientação baseada em dados,
             eficiência operacional e crescimento sustentável.
           </p>
@@ -39,18 +39,6 @@ export default function Home() {
             className="w-182 h-92 rounded-xl shadow-2xl object-cover "
           />
         </div>
-      </div>
-
-      <div className="bg-[url('/evermont/assets/background_mobile02.jpg')] md:bg-[url('/evermont/assets/background_homePage02.jpg')] min-h-[50vh] md:min-h-[74vh] min-w-full bg-cover bg-no-repeat flex flex-col justify-center md:px-[14%] px-[5%] gap-6 pb-0 md:pb-42">
-        <h1 className="text-start md:text-4xl text-xl font-bold text-white tracking-wide leading-6 md:leading-10">
-          Estratégia alinhada <br />
-          <span className="text-[#7CB6D8] mr-3">a Resultados Reais</span>
-        </h1>
-
-        <p className="text-start text-gray-300 leading-relaxed md:text-[1.2rem] text-[1.1rem] max-w-full md:max-w-[450px]">
-          A Evermont Consultoria transforma desafios empresariais complexos em
-          decisões estruturadas e orientadas por informação.
-        </p>
       </div>
 
       <div className="bg-[#eae9ef] w-full h-full flex flex-col items-center justify-center gap-6 py-10 text-center">
