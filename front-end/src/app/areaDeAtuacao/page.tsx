@@ -3,7 +3,7 @@ import { CARD_MOCK, METODOLOGIA_MOCK } from '../../shared/cards_mock/areasDeAtua
 function AreaDeAtuacao() {
   return (
     <div
-      className="bg-[url('/evermont/assets/bg-sobre-contato.jpg')] flex items-center justify-center min-h-screen md:min-h-[150vh] w-full flex-col bg-cover bg-center bg-no-repeat text-white px-8 py-38 md:px-102"
+      className="bg-[url('/evermont/assets/bg-sobre-contato.jpg')] flex items-center justify-center min-h-screen md:min-h-[150vh] w-full flex-col bg-cover bg-center bg-no-repeat text-white py-38 px-8 md:px-[20%]"
     >
       <div className=" text-white flex flex-col gap-6">
         <h1 className="text-3xl font-bold tracking-wide">
@@ -13,7 +13,7 @@ function AreaDeAtuacao() {
           Soluções personalizadas para cada desafio empresarial.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-white">
           {CARD_MOCK.map((card) => (
             <div
               key={card.id}
@@ -39,7 +39,7 @@ function AreaDeAtuacao() {
         <h1 className="text-4xl font-semibold mb-4 tracking-wide text-start">
           Como Conduzimos a Transformação
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-white">
           {METODOLOGIA_MOCK.map((card) => (
             <div
               key={card.id}

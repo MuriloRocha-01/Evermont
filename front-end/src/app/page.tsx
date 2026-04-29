@@ -7,10 +7,10 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen text-white">
       <div
-        className={`min-h-[100vh] min-w-full bg-[url('/evermont/assets/bg-sobre-contato.jpg')] bg-cover bg-bottom bg-no-repeat flex flex-row justify-center pt-38 pb-[10%]`}
+        className={`min-h-[90vh] lg:min-h-[100vh] min-w-full bg-[url('/evermont/assets/bg-sobre-contato.jpg')] bg-cover bg-bottom bg-no-repeat flex flex-col lg:flex-row justify-center pt-38 pb-[10%]`}
       >
-        <div className="flex flex-col justify-center gap-8 px-8 md:px-0 md:items-start items-center">
-          <h1 className="max-w-none md:max-w-[600px] text-start lg:text-[2.3rem] text-xl font-bold text-white tracking-wide leading-6 md:leading-10">
+        <div className="flex flex-col items-center lg:items-none justify-center gap-8 px-8 md:px-[20%] lg:px-0 items-start">
+          <h1 className="max-w-none lg:max-w-[600px] text-start lg:text-[2.3rem] text-2xl font-bold text-white tracking-wide leading-6 md:leading-10">
             Transformamos dados em
             <span className="text-[#7CB6D8] mx-2 md:mx-3">
               clareza estratégica
@@ -18,7 +18,7 @@ export default function Home() {
             para decisões que movem empresas.
           </h1>
 
-          <p className="text-start md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed max-w-none md:max-w-[500px]">
+          <p className="max-w-none lg:max-w-[500px] lg:text-start md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed ">
             Soluções para empresas que buscam orientação baseada em dados,
             eficiência operacional e crescimento sustentável.
           </p>
@@ -31,12 +31,12 @@ export default function Home() {
         </div>
         <div className="items-center justify-center flex">
           <Image
-            src="/evermont/assets/card_inicio.png"
+            src="/evermont/assets/card_inicio.jpg"
             alt="Sobre a Evermont"
             width={800}
             height={450}
             priority
-            className="w-182 h-92 rounded-xl shadow-2xl object-cover "
+            className="hidden lg:block w-182 h-92 rounded-xl shadow-2xl "
           />
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Home() {
         <h2 className="text-[#393756]  text-3xl font-bold">
           Nossa Experiência
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-[85%] md:w-[60%]">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-[85%] md:w-[60%]">
           {experienceStats.map((card) => (
             <div
               key={card.id}
@@ -69,7 +69,7 @@ export default function Home() {
           A Evermont Consultoria transforma desafios empresariais complexos em
           decisões <br /> estruturadas e orientadas por informação e eficácia.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-[85%] md:w-[60%] pb-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 w-[85%] md:w-[60%] pb-10">
           {CARD_MOCK.map((card) => (
             <div
               key={card.id}

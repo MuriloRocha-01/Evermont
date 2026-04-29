@@ -2,14 +2,15 @@ import {
   EXPERIENCIA_SOBRE,
   VALORES_SOBRE,
 } from "../../shared/cards_mock/sobre_mock/card_mock";
-import Image from 'next/image'
+import Image from "next/image";
 
 export default function Sobre() {
   return (
-      <div className="text-[#393756] bg-[#eae9ef] flex items-center justify-center min-h-screen w-full flex-col bg-cover ">
-        <div className="px-8 md:px-102 text-start py-38 text-white items-center justify-center bg-[url('/evermont/assets/bg-sobre-contato.jpg')] min-h-[100vh] min-w-full bg-cover bg-bottom bg-no-repeat flex flex-col gap-6">
-          <h1 className="w-full text-3xl font-bold">Sobre Nós</h1>
-          <p className="w-full md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed">
+    <div className="text-[#393756] bg-[#eae9ef] flex items-center justify-center min-h-screen w-full flex-col bg-cover ">
+      <div className="text-start py-38 text-white items-center justify-center bg-[url('/evermont/assets/bg-sobre-contato.jpg')] max-h-[100vh] lg:min-h-[100vh] min-w-full bg-cover bg-bottom bg-no-repeat flex flex-row gap-6">
+        <section className="flex flex-col max-w-none lg:max-w-[600px] gap-6 px-8 md:px-[20%] lg:px-0">
+          <h1 className="lg:text-[2.3rem] text-2xl font-bold text-center">Sobre Nós</h1>
+          <p className="md:text-[1.2rem] text-[1.1rem] text-gray-300 leading-relaxed ">
             A Evermont Consultoria fornece soluções assertivas e decisões
             estratégicas para impulsionar negócios. Nossa experiencia em
             consultoria de gestão e tecnologia permite identificar oportunidades
@@ -18,20 +19,23 @@ export default function Sobre() {
             transparência e foco em dados para transformar desafios em
             conquistas reais para sua empresa.
           </p>
+        </section>
+        <section className="items-center justify-center flex">
           <Image
-            className="w-full h-auto rounded-xl md:block hidden object-cover md:block hidden"
+            className="hidden lg:block w-182 h-92 rounded-xl shadow-2xl object-cover"
             src="/evermont/assets/card_sobre_page.jpg"
             alt="Sobre a Evermont"
-            width={800} 
-            height={450} 
-            priority 
+            width={800}
+            height={450}
+            priority
           />
-        </div>
+        </section>
+      </div>
 
-        <section className="px-8 md:px-102 text-center my-20">
+      <section className="px-8 md:px-[20%] text-center my-20">
         <h2 className="text-3xl font-bold mb-10">Nossa Experiencia</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 text-white">
           {EXPERIENCIA_SOBRE.map((card) => (
             <div
               key={card.id}
@@ -56,7 +60,7 @@ export default function Sobre() {
           Visão, Missão e Valores
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-12 text-white">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 pb-12 text-white">
           {VALORES_SOBRE.map((card) => (
             <div
               key={card.id}
@@ -75,9 +79,8 @@ export default function Sobre() {
               </p>
             </div>
           ))}
-          
         </div>
-        </section>
-      </div>
+      </section>
+    </div>
   );
 }

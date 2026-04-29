@@ -11,7 +11,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Evermont Consultoria", // Título atualizado
+  title: "Evermont Consultoria", 
   description: "A Evermont Group oferece soluções em eficiência operacional, consultoria de gestão e planejamento para expansão de empresas.",
   keywords: ['Evermont', 'Consultoria', 'Gestão Estratégica', 'Eficiência Operacional'],
   icons: {
